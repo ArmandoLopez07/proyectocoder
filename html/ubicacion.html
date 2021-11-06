@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilos/estilo.css" />
+    <script
+      src="https://kit.fontawesome.com/4ff19d6d05.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Compratodo</title>
+  </head>
+  <body>
+    <header>
+      <!-- comienza parte de arriba header -->
+      <div class="headarriba">
+        <input type='checkbox' id='toggle'></input>
+        <label class="men" for="toggle"><i class="fas fa-bars"></i></label>
+        <a href="index.html" class="nombre elementos"></a>
+        <div class="bar">
+          <input type="text" name="Buscar" id="" class="busqueda elementos" />
+          <button class="busque-btn elementos">Buscar</button>
+        </div>
+        <div class="headicon">
+          <p class="hi1 elementos"><i class="fas fa-user-alt"></i></p>
+          <p class="hi2 elementos"><i class="fas fa-shopping-cart"></i></p>
+        </div>
+      </div>
+      <hr />
+      <!-- comienza parte de abajo header -->
+      <div class="headabajo">
+        <p class="elementos direccion">
+          <i class="fas fa-map-marker-alt"></i> Direccion
+        </p>
+        <ul class="elementos menu">
+          <li class="elementos opcion">
+            <a href="categoria.html">Categorias</a>
+          </li>
+          <li class="elementos opcion">
+            <a href="productos.html">Recomendados</a>
+          </li>
+          <li class="elementos opcion">
+            <a href="ubicacion.html">Sucursales</a>
+          </li>
+          <li class="elementos opcion">
+            <a href="recientes.html">Recientes</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="contenido">
+      <div class="ubicacion">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14932.330031790974!2d-103.3852946!3d20.666222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x93792b167aed8026!2sDDTECH!5e0!3m2!1ses!2smx!4v1634795144994!5m2!1ses!2smx"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="datcont">
+        <p class="titulofoot">Direccion</p>
+        <p class="genericofoot">
+          Av Niños Héroes 2749, Jardines del Bosque, 44520 Guadalajara, Jal.
+        </p>
+        <p class="titulofoot">Telefono:</p>
+        <p class="genericofoot">55-55-55-55-55</p>
+        <p class="titulofoot">Correo:</p>
+        <p class="genericofoot">contacto@compratodo.com</p>
+      </div>
+    </div>
+    <footer>
+      <div class="parrafos">
+        <p class="genericofoot">Aviso de privacidad</p>
+        <p class="genericofoot">inicio</p>
+      </div>
+      <div class="datos">
+        <p class="titulofoot">Contacto</p>
+        <p class="genericofoot">Correo</p>
+        <p class="genericofoot">Ubicacion</p>
+        <p class="genericofoot">telefono</p>
+      </div>
+    </footer>
+  </body>
+</html>
