@@ -154,8 +154,12 @@ header .fas {
   background-color: white;
 }
 .producto {
-  width: 200px;
-  display: inline-block;
+  width: 230px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
   box-shadow: 0px 5px 9px 1px lightgrey;
   /* background-color: rgb(241, 241, 241); */
   background: radial-gradient(
@@ -167,27 +171,87 @@ header .fas {
   margin-top: 30px;
 }
 .producto img {
-  width: 80%;
-  height: 160px;
+  width: 190px;
+  height: 180px;
+
   padding: 20px;
   background-color: white;
   border-radius: 15px 15px 0 0;
 }
 .title {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 25px;
+
   padding: 10px;
   color: rgb(252, 252, 252);
   text-shadow: 0 0 5px black;
 }
 .price {
+  padding-top: 20px;
   padding-left: 15px;
   font-weight: 600;
+  font-size: 23px;
 }
 .desc {
   padding: 15px;
   font-weight: 500;
 }
+/**
+ * ==============================================
+ * animacion puntos  
+ * ==============================================
+ */
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #43ff72;
+  color: #32f35c;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #2aff4d;
+  color: #2aff4d;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #2aff4d;
+  color: #2aff4d;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #2aff4d;
+  }
+  50%,
+  100% {
+    background-color: #e9ffe6;
+  }
+}
+
 /* Estilos pagina direccion */
 .ubicacion {
   margin: 60px 0 60px 20%;
@@ -206,7 +270,7 @@ header .fas {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 5%;
   flex-wrap: wrap;
   padding: 2% 10% 2% 10%;
 }
