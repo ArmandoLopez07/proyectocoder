@@ -14,7 +14,7 @@ body {
 
 /* estilos header */
 header {
-  height: 190px;
+  height: 205px;
   position: relative;
   width: 100%;
   background-color: rgb(106, 216, 112);
@@ -94,7 +94,7 @@ header .fas {
 }
 /* header contenido abajo */
 .headabajo {
-  height: 60px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,10 +122,16 @@ header .fas {
   justify-content: center;
   padding: 30px;
 }
-.imagenes {
+.carousel {
   box-shadow: 0 3px 9px 1px lightgrey;
   background-color: white;
+  height: 100%;
+  width: 40%;
 }
+/* .imagenes {
+  box-shadow: 0 3px 9px 1px lightgrey;
+  background-color: white;
+} */
 .recomienda {
   padding: 0;
   padding-left: 15%;
@@ -148,14 +154,12 @@ header .fas {
   justify-content: center;
   margin-bottom: 40px;
   gap: 5%;
+  flex-wrap: wrap;
 }
-.galeria img {
-  width: 100%;
-  background-color: white;
-}
+
 .producto {
   width: 230px;
-  height: 380px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -171,29 +175,26 @@ header .fas {
   margin-top: 30px;
 }
 .producto img {
-  width: 190px;
-  height: 180px;
-
+  width: 100%;
+  height: auto;
   padding: 20px;
   background-color: white;
   border-radius: 15px 15px 0 0;
 }
 .title {
   font-weight: 800;
-  font-size: 25px;
-
+  font-size: 23px;
   padding: 10px;
   color: rgb(252, 252, 252);
   text-shadow: 0 0 5px black;
 }
 .price {
-  padding-top: 20px;
   padding-left: 15px;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 20px;
 }
 .desc {
-  padding: 15px;
+  padding-left: 15%;
   font-weight: 500;
 }
 /**
@@ -370,22 +371,17 @@ header .fas {
 /* estilos footer */
 footer {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   bottom: 0;
   background-color: rgb(241, 241, 241);
   width: 100%;
   height: 250px;
   box-shadow: 0 0 7px 1px rgb(218, 218, 218);
+  align-items: center;
+  justify-content: space-evenly;
 }
-.parrafos {
-  position: absolute;
-  left: 20%;
-  top: 35%;
-}
-.datos {
-  position: absolute;
-  right: 40%;
-  top: 20%;
-}
+
 .titulofoot {
   font-weight: 800;
   font-size: 25px;
@@ -458,6 +454,9 @@ footer {
     z-index: 1;
     gap: 2%;
     transition: left 1s ease-in-out;
+  }
+  .carousel {
+    width: 100%;
   }
 
   #toggle:checked ~ .headabajo {
