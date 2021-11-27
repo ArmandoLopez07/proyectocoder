@@ -1,0 +1,10 @@
+@import "animaciones";
+
+.productosp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  padding: 2% 10% 2% 10%;
+}
