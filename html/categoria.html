@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilos/estilo.css" />
-    <script
-      src="https://kit.fontawesome.com/4ff19d6d05.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Compratodo</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../estilos/bootstrap.min.css">
+  <link rel="stylesheet" href="../estilos/main.css" />
+  <script
+    src="https://kit.fontawesome.com/4ff19d6d05.js"
+    crossorigin="anonymous"
+  ></script>
+  <title>Compratodo</title> 
+  <script src="../js/jquery.js"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
   <body>
     <header>
       <!-- comienza parte de arriba header -->
       <div class="headarriba">
         <input type='checkbox' id='toggle'></input>
         <label class="men" for="toggle"><i class="fas fa-bars"></i></label>
-        <a href="index.html" class="nombre elementos"></a>
+        <a href="../index.html" class="nombre elementos"></a>
         <div class="bar">
           <input type="text" name="Buscar" id="" class="busqueda elementos" />
           <button class="busque-btn elementos">Buscar</button>
@@ -48,6 +51,7 @@
           </li>
         </ul>
       </div>
+    </header>
     <div class="contenido">
       <h3 class="recomienda">Categorias</h3>
       <hr />
@@ -97,7 +101,7 @@
     <footer>
       <div class="parrafos">
         <p class="genericofoot">Aviso de privacidad</p>
-        <p class="genericofoot">inicio</p>
+        <p class="genericofoot"><a href="../index.html">Inicio</a></p>
       </div>
       <div class="datos">
         <p class="titulofoot">Contacto</p>

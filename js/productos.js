@@ -15,13 +15,11 @@ function cargaprod(productos) {
 
     var x = product.title;
 
-    var y = x.split(" ").slice(0, 6).join(" ");
-
     contenedor.append(
       "<div class='producto'><img src= ' " +
         product.image +
         " ' alt='' /><p class='title'>" +
-        y +
+        x +
         "</p><p class='price'>$" +
         product.price +
         "</p></div>"
