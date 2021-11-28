@@ -378,6 +378,8 @@ hr {
   color: white;
   border-width: 0;
   border-radius: 20px; }
+  .busque-btn i {
+    display: none; }
 
 .headicon {
   display: inline-block;
@@ -704,6 +706,7 @@ footer {
     .busque-btn span {
       display: none; }
     .busque-btn i {
+      display: block;
       font-size: 15px !important; }
   .headicon {
     margin-left: 0px; }
