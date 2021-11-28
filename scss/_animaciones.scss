@@ -1,3 +1,16 @@
+/*===============================================
+  crecimiento al pasar raton
+==================================================*/
+
+.producto:hover {
+  transform: scale(1.05, 1.05);
+  transition: ease-in-out 0.3s;
+}
+.categoria:hover {
+  transform: scale(1.05, 1.05);
+  transition: ease-in-out 0.3s;
+}
+
 /**
  * ==============================================
  * animacion puntos  

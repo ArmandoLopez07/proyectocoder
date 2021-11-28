@@ -1,2 +1,12 @@
 $color-princ: rgb(106, 216, 112);
 $footer-text: gray;
+$color-categorias: gray;
+$altura-titulo: (36px * 2)+10px;
+
+@mixin categorias($categoria: true) {
+  @if $categoria {
+    background-color: rgb(241, 241, 241);
+  } @else {
+    background-color: gray;
+  }
+}
