@@ -59,7 +59,6 @@ hr {
   background-image: url("https://dummyimage.com/100x50/187a0f/fff.png&text=Compratodo");
   background-repeat: no-repeat;
 }
-
 .bar {
   position: relative;
   width: 30%;
@@ -112,7 +111,12 @@ hr {
   justify-content: center;
   gap: 20px;
 }
-
+.inicio {
+  display: none;
+  a {
+    color: white !important;
+  }
+}
 .contenido {
   width: 100%;
   position: relative;

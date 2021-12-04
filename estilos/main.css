@@ -406,6 +406,11 @@ hr {
   justify-content: center;
   gap: 20px; }
 
+.inicio {
+  display: none; }
+  .inicio a {
+    color: white !important; }
+
 .contenido {
   width: 100%;
   position: relative; }
@@ -616,9 +621,14 @@ footer {
 /*--- Estilos Pagina ubicacion----------*/
 .contenedor-ubicacion {
   display: flex;
-  margin: 5% auto 5% 0;
+  flex-direction: row;
+  width: 100%;
+  margin: 5% 0 5% 0;
   align-content: center;
   justify-content: center; }
+
+.ubicacion {
+  width: 600px; }
 
 .datcont {
   background-color: #f1f1f1;
@@ -719,6 +729,10 @@ footer {
     left: 50%; }
   .direccion {
     padding-top: 5%; }
+  .inicio {
+    display: block; }
+    .inicio a {
+      color: white !important; }
   .fa-map-marker-alt {
     margin-right: 10px; }
   .menu {
@@ -750,4 +764,15 @@ footer {
     left: 40px; }
   #burguir:checked ~ .headabajo {
     transform: translateX(0%);
-    transition: all 1s; } }
+    transition: all 1s; }
+  .contenedor-ubicacion {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+  .ubicacion {
+    align-self: center;
+    width: 100%; }
+    .ubicacion iframe {
+      width: 100%; }
+  .datcont {
+    width: 100%; } }

@@ -51,6 +51,12 @@
   .direccion {
     padding-top: 5%;
   }
+  .inicio {
+    display: block;
+    a {
+      color: white !important;
+    }
+  }
   .fa-map-marker-alt {
     margin-right: 10px;
   }
@@ -90,5 +96,21 @@
   #burguir:checked ~ .headabajo {
     transform: translateX(0%);
     transition: all 1s;
+  }
+  //-----------Responsive ubicacion---------------
+  .contenedor-ubicacion {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .ubicacion {
+    align-self: center;
+    width: 100%;
+    iframe {
+      width: 100%;
+    }
+  }
+  .datcont {
+    width: 100%;
   }
 }
