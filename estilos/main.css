@@ -637,17 +637,27 @@ footer {
   padding: 40px; }
 
 /* estilos reciente */
+.recomienda-titulo {
+  padding: 0;
+  padding-left: 15%;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 600px; }
+
+.contenido-reciente {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  margin: 5%;
+  align-content: center;
+  justify-content: center; }
+
 .barra {
-  display: inline-block;
   background-color: #ececec;
   height: 500px;
-  margin-left: 8%;
-  margin-top: 60px;
-  width: 300px;
-  margin-bottom: 100px;
-  position: absolute;
-  padding-left: 20px;
-  padding-top: 40px; }
+  width: 20%;
+  padding: 3%; }
   .barra .barra h4 {
     margin: 15px; }
   .barra p {
@@ -655,19 +665,16 @@ footer {
     margin-left: 25px; }
   .barra input {
     display: inline-block;
-    width: 50px;
+    width: 30%;
     margin-left: 25px; }
   .barra select {
-    margin-left: 25px; }
+    margin-left: 25px;
+    width: 60%; }
 
 .recientes {
-  display: inline-block;
-  height: 550px;
-  width: 50vw;
-  margin-left: 35%;
-  margin-top: 60px;
   overflow-y: scroll;
-  margin-bottom: 90px; }
+  height: 500px;
+  width: 50%; }
 
 .compra {
   height: 200px;
@@ -775,4 +782,47 @@ footer {
     .ubicacion iframe {
       width: 100%; }
   .datcont {
-    width: 100%; } }
+    width: 100%; }
+  .recomienda-titulo {
+    width: 100%; }
+  .contenido-reciente {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5%;
+    margin: 5%; }
+  .barra {
+    background-color: #ececec;
+    height: 300px;
+    width: 80%;
+    padding: 3%; }
+    .barra select {
+      margin-left: 25px;
+      width: 60%; }
+  .recientes {
+    height: 500px;
+    width: 80%;
+    margin-top: 5%; }
+  .compra {
+    height: 150px;
+    background-color: #f1f1f1;
+    box-shadow: 0 5px 6px 0.1px lightgrey;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px; }
+    .compra img {
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+      vertical-align: top; }
+  .descripcion {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 40px; }
+    .descripcion p {
+      padding: 0;
+      margin: 3%; }
+  .titulorec {
+    font-weight: 800;
+    font-size: 25px; } }
