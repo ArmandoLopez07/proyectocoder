@@ -113,4 +113,59 @@
   .datcont {
     width: 100%;
   }
+  //---------Responsive Recientes-------------------
+  .recomienda-titulo {
+    width: 100%;
+  }
+  .contenido-reciente {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5%;
+    margin: 5%;
+  }
+  .barra {
+    background-color: rgb(236, 236, 236);
+    height: 300px;
+    width: 80%;
+    padding: 3%;
+
+    select {
+      margin-left: 25px;
+      width: 60%;
+    }
+  }
+  .recientes {
+    height: 500px;
+    width: 80%;
+    margin-top: 5%;
+  }
+  .compra {
+    height: 150px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 5px 6px 0.1px lightgrey;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    img {
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+      vertical-align: top;
+    }
+  }
+  .descripcion {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 40px;
+    p {
+      padding: 0;
+      margin: 3%;
+    }
+  }
+  .titulorec {
+    font-weight: 800;
+    font-size: 25px;
+  }
 }
